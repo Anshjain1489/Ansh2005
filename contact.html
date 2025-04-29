@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Ansh Tours and Travels</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <main>
+        <section class="header">
+            <div class="container">
+                <div class="header-title">
+                    <h1 class="header-title-text">Travelling with <span class="header-title1">Ansh</span></h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Tourlist.html">Tour list</a></li>
+                        <li><a href="Hotels.html">Hotels</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container1">
+                <div class="contact-title">
+                    <h4 class="contact-title-heading">Let's connect and get to know
+                        each other</h4>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="Number" placeholder="Phone Number" required>
+                        <textarea name="message" placeholder="Enter your message" required></textarea>
+                        <input type="checkbox" name="check" id="check" required>
+                        <label for="check">Save my name, email, and website in this browser for the next time I
+                            comment.</label>
+                        <button type="submit" id="btn13">Send message</button>
+                        <p id="Ticket"></p>
+                        <h1 class="Location">Location : </h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.9433741961666!2d75.82071560828773!3d22.655899779346637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd9732905ba3%3A0xb086d4368f83ed6e!2sIPS%20Academy%20Gate%20No.%2002!5e0!3m2!1sen!2sin!4v1741893474218!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </form>
+                </div>
+            </div>
+    </main>
+    <footer class="section4">
+        <div class="footer">
+            <p>
+                <p class="connect-us">Contact</p>
+                <p class="Phone-no">📞 Phone:<a href="tel:9264974887">9264974887</a></p>
+                <P class="Gmail">📩 Email:<a href="mailto:anshjain1440@gmail.com">anshjain1440@gmail.com</a></p>
+            </p>
+            <div class="footer-icon">
+                <div class="Follow-us">👤 Follow us : </div>
+                <div class="footer-icons">
+                    <a href="https://www.instagram.com/anshjain680/" target="_blank">
+                        <img src="1.png" height="20px" class="inta"/>
+                    </a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/ansh-jain-66a4b6326/" target="_blank">
+                        <img src="2.png" height="20px" />
+                    </a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.snapchat.com/add/anshjain1813?share_id=FfTcT__0hYM&locale=en-GB"
+                        target="_blank">
+                        <img src="3.png" height="20px" />
+                    </a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/people/Ansh-Jain/pfbid0P1zRnqwqV6SYak21jqQaYLwRQUuNLrAXGmhwFikwVB1YCWWdNiJ4SZqUvDnSme7Dl/?mibextid=ZbWKwL"
+                        target="_blank">
+                        <img src="4.png" height="20px" />
+                    </a>
+                </div>
+            </div>
+            <Address>🏠Address : AB Rd, Rajendra Nagar, Bijalpur, Indore, Madhya Pradesh 452012</Address>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const Ticket = document.getElementById("Ticket");
+            Ticket.innerHTML = "Your response has been recorded!";
+        });
+    </script>
+</body>
+
+</html>

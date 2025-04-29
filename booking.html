@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>Ansh Tours and Travels</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <p class="header-title-text">Travelling with <span>Ansh</span></p>
+        </div>
+    </header>
+    <main>
+        <section id="section-form">
+            <form id="form-booking">
+                <div class="form-booking-container">
+                    <div class="form-booking-container-heading">
+                        <h1>Booking Details</h1>
+                    </div>
+                    <div class="booking">
+                        <label for="checkIn">Check-in Date:</label>
+                        <input type="date" id="checkIn" name="checkIn" required>
+                    </div>
+                    <div class="booking">
+                        <label for="checkOut">Check-out Date:</label>
+                        <input type="date" id="checkOut" name="checkOut" required>
+                    </div>
+                    <div class="booking">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" placeholder="No. of Guests" required>
+                    </div>
+                    <div class="booking">
+                        <label for="room">Rooms available:</label>
+                        <select id="room" name="room" required>
+                            <option value="Luxury Suite">Luxury Suite</option>
+                            <option value="Standard Deluxe Room">Standard Deluxe Room</option>
+                            <option value="The Penthouse">The Penthouse</option>
+                            <option value="The Presidential Suite">The Presidential Suite</option>
+                            <option value="Junior Suite Room">Junior Suite Room</option>
+                            <option value="The Executive Suite">The Executive Suite</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-booking-container-heading">
+                        <h1>Booked By:</h1>
+                    </div>
+                    <div class="booking">
+                        <label for="name">Enter the Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter the Name Booked By" required>
+                    </div>
+                    <div class="booking">
+                        <label for="phone">Enter the Phone-no:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter the Phone-no" required>
+                    </div>
+                    <div class="booking">
+                        <label for="email">Enter the Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter the Email" required>
+                    </div>
+                    <div class="booking">
+                        <table>
+                            <tr>
+                                <th>Booking Id</th>
+                                <td><input type="number" id="BookingId" name="BookingId" required></td>
+                            </tr>
+                            <tr>
+                                <th>Booking Date</th>
+                                <td><input type="date" id="BookingDate" name="BookingDate" required></td>
+                            </tr>
+                            <tr>
+                                <th>Status</th>
+                                <td>
+                                    <select id="status" name="status">
+                                        <option value="Confirmed">Confirmed</option>
+                                        <option value="Not Confirmed">Not Confirmed</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="booking">
+                        <table>
+                            <tr>
+                                <th>Quantity</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td><input type="number" name="Quantity" id="Quantity"></td>
+                                <td><input type="text" name="Description" id="Description"></td>
+                                <td><input type="number" name="Price" id="Price"></td>
+                                <td><input type="number" name="Amount" id="Amount"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="booking">
+                        <h1>Additional information:</h1>
+                        <p>Check in before 1 PM and Check out by 10 AM</p>
+                        <p>Free Parking</p>
+                    </div>
+                    <button type="submit" id="pay">Payment</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Ansh Tours and Travels. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="booked.js"></script>
+</body>
+
+</html>

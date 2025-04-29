@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.confirmation-message {
+    font-size: 18px;
+    color: #333;
+}
+
+.summary-box {
+    margin: 20px 0;
+    text-align: left;
+    background-color: #f2f9ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.summary-box h2 {
+    color: #005bb5;
+    border-bottom: 1px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+.payment-options {
+    margin-top: 20px;
+}
+
+.pay-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pay-btn:hover {
+    background-color: #005bb5;
+}
+
+#QR-CODE {
+    width: 800px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.upi-app {
+    width: 30%;
+    text-align: center;
+    background-color: #9fbdf1;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upi-app:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#qr-display {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#qr-display img {
+    width: 200px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}

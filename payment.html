@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>Payment - Ansh Tours and Travels</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Payment Portal</h1>
+        <p class="confirmation-message">
+            Thank you for your booking! Please proceed with your payment below.
+        </p>
+
+        <div class="payment-options">
+            <h3>Select Payment Method</h3>
+            <button class="pay-btn" onclick="toggleUPI()">UPI</button>
+            <div id="QR-CODE" class="hidden">
+                <div class="qr-container">
+                    <div class="upi-app" onclick="showQRCode('google')">
+                        <p>Google Pay</p>
+                    </div>
+                    <div class="upi-app" onclick="showQRCode('phonepe')">
+                        <p>PhonePe</p>
+                    </div>
+                    <div class="upi-app" onclick="showQRCode('paytm')">
+                        <p>Paytm</p>
+                    </div>
+                </div>
+
+                <div id="qr-display" class="hidden">
+                    <h4>Scan to Pay</h4>
+                    <img id="qr-image" src="" alt="QR Code">
+                </div>
+            </div>
+
+            <button class="pay-btn" onclick="toggleCardForm()">Credit/Debit Card</button>
+
+            <div id="card-form" class="hidden">
+                <form onsubmit="event.preventDefault(); alert('Processing card payment...');">
+                    <div class="summary-box">
+                        <label for="cardholder">Cardholder Name:</label><br>
+                        <input type="text" id="cardholder" name="cardholder" required><br><br>
+
+                        <label for="cardnumber">Card Number:</label><br>
+                        <input type="text" id="cardnumber" name="cardnumber" maxlength="16" required><br><br>
+
+                        <label for="expiry">Expiry Date:</label><br>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required><br><br>
+
+                        <label for="cvv">CVV:</label><br>
+                        <input type="password" id="cvv" name="cvv" maxlength="4" required><br><br>
+
+                        <button class="pay-btn" type="submit">Pay Now</button>
+                    </div>
+                </form>
+            </div>
+            <button class="pay-btn" onclick="toggleNetBanking()">Net Banking</button>
+            <div id="netbanking-form" class="hidden">
+                <div class="summary-box">
+                    <form onsubmit="event.preventDefault(); alert('Redirecting to selected bank...');">
+                        <label for="bank-select">Choose Your Bank:</label><br>
+                        <select id="bank-select" name="bank-select" required>
+                            <option value="">-- Select Bank --</option>
+                            <option value="sbi">State Bank of India</option>
+                            <option value="hdfc">HDFC Bank</option>
+                            <option value="icici">ICICI Bank</option>
+                            <option value="axis">Axis Bank</option>
+                            <option value="kotak">Kotak Mahindra Bank</option>
+                        </select><br><br>
+
+                        <button class="pay-btn" type="submit">Proceed to Bank</button>
+                    </form>
+                </div>
+            </div>
+            <button class="pay-btn" onclick="toggleCash()">Cash at Arrival</button>
+            <div id="cash-confirmation" class="hidden">
+                <div class="summary-box">
+                    <p><strong>Payment Method:</strong> Cash on Arrival</p>
+                    <p>You have chosen to pay at the time of arrival. Please carry the exact amount in cash.</p>
+                    <p>Thank you for booking with Ansh Tours and Travels!</p>
+                    <button class="pay-btn" onclick="confirmCash()">Confirm Booking</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <script>
+        function toggleUPI() {
+            const upiSection = document.getElementById('QR-CODE');
+            upiSection.classList.toggle('hidden');
+        }
+
+        function showQRCode(type) {
+            const qrImage = document.getElementById('qr-image');
+            const qrDisplay = document.getElementById('qr-display');
+
+            if (type === 'google') {
+                qrImage.src = 'QRCODE.jpg';
+                qrImage.alt = 'Google Pay QR Code';
+            } else if (type === 'paytm') {
+                qrImage.src = 'paytm.jpg';
+                qrImage.alt = 'Paytm QR Code';
+            } else if (type === 'phonepe') {
+                qrImage.src = 'phonepe.jpg';
+                qrImage.alt = 'PhonePe QR Code';
+            }
+
+            qrDisplay.classList.remove('hidden');
+        }
+        function toggleCardForm() {
+            const cardForm = document.getElementById('card-form');
+            cardForm.classList.toggle('hidden');
+        }
+        function toggleNetBanking() {
+            const netForm = document.getElementById('netbanking-form');
+            netForm.classList.toggle('hidden');
+        }
+
+        function toggleCash() {
+            const cashBox = document.getElementById('cash-confirmation');
+            cashBox.classList.toggle('hidden');
+        }
+
+        function confirmCash() {
+            alert("Your booking has been confirmed! Please pay in cash at arrival.");
+        }
+
+    </script>
+</body>
+
+</html>

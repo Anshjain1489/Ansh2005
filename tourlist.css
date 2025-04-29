@@ -1,0 +1,371 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+.container{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+    margin: 0px;
+}
+
+.header-title{
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.header-title1{
+    color: #5c98f2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-title-text{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.nav ul li{
+    padding: 15px 30px 15px 30px;
+    margin-left: 100px;
+    float: left;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav ul li a:hover{
+    color: #FF0000;
+}
+.nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+.nav ul li:hover ul{
+    display: block;
+}
+
+.section0{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    margin-top: 15px;
+    color: #5c98f2;
+}
+
+.section0-text-para{
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #fffece;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+.section1{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+
+}
+
+.section1-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.section1 h1{
+    font-size: 50px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.section1 p{
+    font-size: 20px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.section1 img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.List1{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 50px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List2{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List3{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List4{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 50px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List5{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List6{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.section2{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+}
+
+.section2-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.section2 h1{
+    font-size: 50px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.section2 p{
+    font-size: 20px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.section2 img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.List7{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 50px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List8{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.List9{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    box-shadow: 2px 2px#333;
+}
+
+ul{
+    list-style: none;
+}
+
+.section3{
+    position: absolute;
+    top: 140%;
+    left: 0%;
+}
+
+.section3-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.section3 h1{
+    font-size: 50px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.section3 p{
+    font-size: 20px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.section3 img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.BUTTON{
+    background-color: #5c98f2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.BUTTON:hover{
+    background-color: #FF0000;
+}
+
+#Ticket1,#Ticket2,#Ticket3,#Ticket4,#Ticket5,#Ticket6,#Ticket7,#Ticket8,#Ticket9{
+    margin-top: 10px;
+    margin-left:20px ;
+    margin-bottom: 10px;
+    color: #ff3636;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.section4 {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: auto;
+
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icons img{
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.connect-us,.Gmail,.Follow-us,.Phone-no,Address{
+    font-size: 30;
+}
+
+.Follow-us{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.Phone-no a,.Gmail a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.connect-us{
+    text-decoration: underline;
+}
+
+.Location{
+    margin: 10px 0 10px 0;
+}
